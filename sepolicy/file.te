@@ -1,0 +1,3 @@
+type sysrq_trigger_proc, fs_type, mlstrustedobject;
+# Persist file types
+type persist_file, file_type;

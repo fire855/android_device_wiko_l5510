@@ -1,0 +1,2 @@
+type qseecom_device, dev_type;
+type fscklogs, dev_type;
