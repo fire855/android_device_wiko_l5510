@@ -16,31 +16,19 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
-# Start in GSM/WCDMA/LTE mode # LINE<modify default network><2014.10.25><mickal.ma>
 ro.telephony.default_network=9
-# Start in GSM/WCDMA/LTE mode # LINE<modify default logkit><2014.12.05><suda>
 persist.sys.logkit.ctrlcode=0
 debug.sf.hw=1
 debug.egl.hw=1
 debug.composition.type=c2d
 persist.hwc.mdpcomp.enable=true
 debug.mdpcomp.logs=0
-#<Line><FFBAKK-1388><20141229>set idletime of change time GPU;xiongdajun
 debug.mdpcomp.idletime=550
-#Enable translucent status bar feature
 persist.hwc.ptor.enable=true
 dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
-#<Line><FFBAKK-753><20141107>Close gpu to fix bug;xiongdajun
 debug.sf.gpu_comp_tiling=0
-
-#ro.hdmi.enable=true
-#tunnel.decode=true
-#tunnel.audiovideo.decode=true
-#lpa.decode=false
-#lpa.use-stagefright=true
-#persist.speaker.prot.enable=false
 
 #
 # system props for the cne module
@@ -52,7 +40,7 @@ persist.cne.feature=4
 #
 persist.dpm.feature=3
 
-#system props for the MM modules
+# System props for the MM modules
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
@@ -63,7 +51,7 @@ mmp.enable.3g2=true
 mm.enable.smoothstreaming=true
 mm.disable.sec_smoothstreaming=true
 media.aac_51_output_enabled=true
-#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC DIVX DIVXHD
+# Codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC DIVX DIVXHD
 mm.enable.qcom_parser=3407871
 
 #
@@ -72,7 +60,7 @@ mm.enable.qcom_parser=3407871
 ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 
-#system props for time-services
+# system props for time-services
 persist.timed.enable=true
 
 #
@@ -82,9 +70,7 @@ persist.timed.enable=true
 ro.opengles.version=196608
 
 # System property for cabl
-#wangyanhui close cabc
 ro.qualcomm.cabl=0
-#ro.qualcomm.cabl=2
 
 #
 # System props for telephony
@@ -97,37 +83,36 @@ persist.omh.enabled=false
 # System prop to turn on hfp client
 bluetooth.hfp.client=1
 
-#Simulate sdcard on /data/media
+# Simulate sdcard on /data/media
 #
 persist.fuse_sdcard=true
 
 #
-#snapdragon value add features
+# snapdragon value add features
 #
 ro.qc.sdk.audio.ssr=false
-##fluencetype can be "fluence" or "fluencepro" or "none"
 ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
-#Set for msm8916
+# Set for msm8916
 tunnel.audio.encode = false
-#Buffer size in kbytes for compress offload playback
+# Buffer size in kbytes for compress offload playback
 audio.offload.buffer.size.kb=32
-#use VERY_HIGH_QUALITY for audio resampler
+# Use VERY_HIGH_QUALITY for audio resampler
 af.resampler.quality=4
-#Enable offload audio video playback by default
+# Enable offload audio video playback by default
 av.offload.enable=false
-#enable voice path for PCM VoIP by default
+# Enable voice path for PCM VoIP by default
 use.voice.path.for.pcm.voip=true
 #
-#System property for FM transmitter
+# System property for FM transmitter
 #
 ro.fm.transmitter=false
-#enable dsp gapless mode by default
+# Enable dsp gapless mode by default
 audio.offload.gapless.enabled=true
 
-#Audio voice concurrency related flags
+# Audio voice concurrency related flags
 voice.playback.conc.disabled=true
 voice.record.conc.disabled=true
 voice.voip.conc.disabled=true
@@ -135,26 +120,22 @@ voice.voip.conc.disabled=true
 #Set composition for USB
 persist.sys.usb.config=diag,serial_smd,rmnet_bam
 
-#Set read only default composition for USB
+# Set read only default composition for USB
 ro.sys.usb.default.config=diag,serial_smd,rmnet_bam,adb
 
-# set max background services
+# Set max background services
 ro.config.max_starting_bg=8
 
-#property to enable user to access Google WFD settings
+# Property to enable user to access Google WFD settings
 persist.debug.wfd.enable=1
-#propery to enable VDS WFD solution
+# Propery to enable VDS WFD solution
 persist.hwc.enable_vds=1
 ro.min_freq=800000
 
-#PPPOE config enable
+# PPPOE config enable
 ro.config.pppoe_enable=1
 
-#<Line> <remove managedRoaming dialog prompt><mickal.ma><2014.12.04>
 persist.radio.no_cons_man_roam=1
-
-#wenming added for bug1330 20141227
 persist.radio.ignore_dom_time=500
-#wenming ended 20141227
 
 
