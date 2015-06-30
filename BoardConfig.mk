@@ -18,6 +18,7 @@
 DEVICE_PATH := device/wiko/l5510
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+FORCE_32_BIT := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := msm8916_l5510_defconfig
